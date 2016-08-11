@@ -23,7 +23,8 @@ public class JavaApplication8 {
         // TODO code application logic here
         
     Scanner lector = new Scanner (System.in);
-    int pri,seg,u,aux;
+    int pri,seg,u,aux = 0;
+    double aux1;
     System.out.println("Ingrese el primer numero de dos cifras");
     pri=lector.nextInt();
     System.out.println("Ingrese el segundo numero de dos cifras");
@@ -58,12 +59,23 @@ public class JavaApplication8 {
         			break;
         case 5 : aux=pri/seg;
                 System.out.println("La division es "+aux);
-        			break;
-        case 5 : aux=seg%pri;
-                if(aux==)
-                System.out.println("La division es "+aux);
-        			break;
-        default: System.out.println("Numero invalido");
+                 break;
+        case 6 : aux=pri%seg;
+                if(aux==0)
+                    System.out.println("El primero si es divisible por el segundo");
+                else
+                    System.out.println("El primero no es divisible por el segundo");
+                break;			
+        case 7 : aux=seg%pri;
+                if(aux==0)
+                    System.out.println("El segundo si es divisible por el primero");
+                else
+                    System.out.println("El segundo no es divisible por el primero");
+                break;
+        case 8 : aux1=Math.sqrt(pri);
+                System.out.println("La raiz del primero es "+aux1);
+                 break;
+        default: System.out.println("Que punto tan facil");
         			break;			
     }
     
